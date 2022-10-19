@@ -1,5 +1,6 @@
 .main {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   align-items: center;
   justify-content: center;
@@ -9,25 +10,19 @@
   border: 1px solid yellow;
   position: relative;
   width: 80%;
-  height: 300px;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.text {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: larger;
+  padding: 3%;
 }
 
 .topLeft {
   position: absolute;
   left: 0;
   top: 0;
-  width: 10%;
-  height: 10%;
+  width: 2rem;
+  height: 2rem;
   transform: translate3d(-2px, -2px, 0);
   border-top: 4px solid yellow;
   border-left: 4px solid yellow;
@@ -37,8 +32,8 @@
   position: absolute;
   right: 0;
   top: 0;
-  width: 10%;
-  height: 10%;
+  width: 2rem;
+  height: 2rem;
   transform: translate3d(2px, -2px, 0);
   border-top: 4px solid yellow;
   border-right: 4px solid yellow;
@@ -48,8 +43,8 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 10%;
-  height: 10%;
+  width: 2rem;
+  height: 2rem;
   transform: translate3d(-2px, 2px, 0);
   border-bottom: 4px solid yellow;
   border-left: 4px solid yellow;
@@ -59,8 +54,8 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 10%;
-  height: 10%;
+  width: 2rem;
+  height: 2rem;
   transform: translate3d(2px, 2px, 0);
   border-bottom: 4px solid yellow;
   border-right: 4px solid yellow;
@@ -70,7 +65,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  border: 3px solid yellow;
+  border: 2px solid yellow;
   width: 30%;
   transform: translate(-50%, -50%);
 }
@@ -79,7 +74,42 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  border: 3px solid yellow;
+  border: 2px solid yellow;
   width: 30%;
   transform: translate(-50%, 50%);
+}
+
+.heading {
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.container {
+  background-color: rgb(80, 80, 80);
+  height: 100%;
+  width: 100%;
+}
+
+.userWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.imageWrapper {
+  border: 1px solid yellow;
+  padding: 2px;
+}
+
+.userImage {
+  height: 10px;
+}
+
+.userName {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
 }
