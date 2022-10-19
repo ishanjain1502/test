@@ -1,0 +1,85 @@
+.main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.borderWrapper {
+  border: 1px solid yellow;
+  position: relative;
+  width: 80%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.topLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10%;
+  height: 10%;
+  transform: translate3d(-2px, -2px, 0);
+  border-top: 4px solid yellow;
+  border-left: 4px solid yellow;
+}
+
+.topRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10%;
+  height: 10%;
+  transform: translate3d(2px, -2px, 0);
+  border-top: 4px solid yellow;
+  border-right: 4px solid yellow;
+}
+
+.bottomLeft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 10%;
+  height: 10%;
+  transform: translate3d(-2px, 2px, 0);
+  border-bottom: 4px solid yellow;
+  border-left: 4px solid yellow;
+}
+
+.bottomRight {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 10%;
+  height: 10%;
+  transform: translate3d(2px, 2px, 0);
+  border-bottom: 4px solid yellow;
+  border-right: 4px solid yellow;
+}
+
+.topLine {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border: 3px solid yellow;
+  width: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.bottomLine {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border: 3px solid yellow;
+  width: 30%;
+  transform: translate(-50%, 50%);
+}
