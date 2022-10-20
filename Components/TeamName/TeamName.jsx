@@ -1,8 +1,7 @@
 import React from 'react'
-import styles from './Card.module.css'
+import styles from './TeamName.module.css'
 
-const Card = ({child}) => {
-    console.log(child);
+const TeamName = ({child}) => {
   return (
     <main className={styles.main}>
     <div className={styles.borderWrapper}>
@@ -20,4 +19,4 @@ const Card = ({child}) => {
   )
 }
 
-export default Card
+export default TeamName

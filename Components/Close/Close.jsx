@@ -1,8 +1,7 @@
 import React from 'react'
-import styles from './Card.module.css'
+import styles from './Close.module.css'
 
-const Card = ({child}) => {
-    console.log(child);
+const Close = () => {
   return (
     <main className={styles.main}>
     <div className={styles.borderWrapper}>
@@ -13,11 +12,11 @@ const Card = ({child}) => {
       <span className={styles.topLine}></span>
       <span className={styles.bottomLine}></span>
       <div className={styles.container}>
-        {child}
+        CLOSE
       </div>
     </div>
   </main>
   )
 }
 
-export default Card
+export default Close

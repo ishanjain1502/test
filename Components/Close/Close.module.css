@@ -1,0 +1,85 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    height: 20vhvh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .borderWrapper {
+    border: 1px solid grey;
+    position: relative;
+    width: 40vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: grey 1px solid;
+  }
+  
+ .topLeft {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1rem;
+    height: 2rem;
+    transform: translate3d(-2px, -2px, 0);
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+  }
+  
+.topRight {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1rem;
+    height: 2rem;
+    transform: translate3d(2px, -2px, 0);
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+  }
+  
+  .bottomLeft {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1rem;
+    height: 2rem;
+    transform: translate3d(-2px, 2px, 0);
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+  }
+  
+  .bottomRight {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1rem;
+    height: 2rem;
+    transform: translate3d(2px, 2px, 0);
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+  }
+  
+  .topLine {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border: 2px solid white;
+    width: 45%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .bottomLine {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border: 2px solid white;
+    width: 45%;
+    transform: translate(-50%, 50%);
+  } 
+
+  .container{
+    font-size: larger;
+  }
